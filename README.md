@@ -9,13 +9,13 @@ To generate these applications, you must have [platypus](http://sveinbjorn.org/p
 ### Android AVD Manager ###
 ```bash
 echo "source /etc/profile; android avd" | \
-platypus -o None -i android-avd.icns -B -R -y -p /bin/bash - "apps/Android AVD Manager"
+platypus -o None -i android-avd.icns -B -R -y -p /bin/bash - "apps.noindex/Android AVD Manager"
 ```
 
 ### Android SDK Manager ###
 ```bash
 echo "source /etc/profile; android sdk" | \
-platypus -o None -i android-sdk.icns -B -R -y -p /bin/bash - "apps/Android SDK Manager"
+platypus -o None -i android-sdk.icns -B -R -y -p /bin/bash - "apps.noindex/Android SDK Manager"
 ```
 
 ### Android Emulator ###
@@ -24,7 +24,7 @@ Note: The name of the emulator that is launched is "default" - you can modify th
 
 ```bash
 echo "source /etc/profile; emulator @default -partition-size 1024 -gpu on" | \
-platypus -o None -i android-emulator.icns -B -R -y -p /bin/bash - "apps/Android Emulator"
+platypus -o None -i android-emulator.icns -B -R -y -p /bin/bash - "apps.noindex/Android Emulator"
 ```
 
 ### Android Emulator (Wiped) ###
@@ -33,6 +33,6 @@ Note: The name of the emulator that is launched is "default" - you can modify th
 
 ```bash
 echo "source /etc/profile; emulator @default -partition-size 1024 -gpu on -wipe-data" | \
-platypus -o None -i android-emulator.icns -B -R -y -p /bin/bash - "apps/Android Emulator (Wiped)"
+platypus -o None -i android-emulator.icns -B -R -y -p /bin/bash - "apps.noindex/Android Emulator (Wiped)"
 ```
 
