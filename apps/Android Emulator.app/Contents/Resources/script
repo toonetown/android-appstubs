@@ -1,0 +1,1 @@
+source /etc/profile; emulator @default -partition-size 1024 -gpu on
